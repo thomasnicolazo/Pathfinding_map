@@ -38,6 +38,9 @@ int Terrain::getMvtCost(){ //mouvement cost of the terrain
 }
 
 // class BaseTerrain
+/*
+Base terrain (green by default ), mouvement cost to go through it is 1,
+*/
 
 BaseTerrain::BaseTerrain(){
     passable = true;
@@ -54,6 +57,9 @@ void BaseTerrain::displayTerrain(){
 }
 
 // class Mountain Terrain
+/*
+Mountain terrain (green by default ) , can't go through it
+*/
 
 MountainsTerrain::MountainsTerrain(){
     passable = false;
