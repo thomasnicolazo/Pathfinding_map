@@ -36,10 +36,12 @@ bool isInMap(Map* mapGrid, int row, int col) // check if successor points are in
 bool isUnBlocked(Map* mapGrid, int x, int y) // check if terrain is passable
 {
     // Returns true if the cell is not blocked else false
-    if ((mapGrid->getElementAt(x,y)).isPassable() == true)
-        return (true);
-    else
-        return (false);
+    if ((mapGrid->getElementAt(x,y)).isPassable() == true){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 void initStartNode(std::vector<Node>* openList,int start_x,int start_y){ // init first node, it corresponds to the starting point
