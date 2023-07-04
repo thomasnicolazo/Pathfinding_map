@@ -7,6 +7,7 @@ protected:
     bool passable;
     int mvtCost;
     std::string color;
+    //not used
     int x;
     int y;
 public:
@@ -17,13 +18,13 @@ public:
 
     void displayCoordinates();
 
-    void changeColor(std::string couleur);
+    void changeColor(std::string couleur); // change color of the terrain
 
-    void modifyCoordinates(int coorX, int coorY);
+    void modifyCoordinates(int coorX, int coorY); // not used
 
-    bool isPassable();
+    bool isPassable(); // check if we can go through the terrain
 
-    int getMvtCost();
+    int getMvtCost(); // get mouvement cost of the terrain
 };
 
 
